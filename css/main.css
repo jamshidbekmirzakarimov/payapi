@@ -170,6 +170,123 @@ a{
 .site-header-btn:active{
   background-color: #DA6D97;
 }
+
+.site-header__burger{
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-burger{
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 300px;
+  transform: translateX(100%);
+  height: 100vh;
+  padding-top: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #1B262F;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: calc(50% + 127px) bottom;
+  z-index: 99;
+}
+
+.menu-burger-active{
+  transform: translateX(0px);
+  display: block;
+  transition: 1s;
+}
+
+.close-button{
+  display: none;
+  margin-left: auto;
+  margin-bottom: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.site-nav-list-mobi{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.site-nav-item-mobi{
+  margin-bottom: 32px;
+}
+
+.site-nav-link-mobi{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center; 
+  color: var(--main-subtitle-color);
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.site-header-mobi-btn{
+  display: inline-block;
+  width: 100%;
+  padding: 15px 25px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: var(--main-subtitle-color);
+  background-color: #BA4270;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px; 
+}
+
+/* ****** SITE HEADER RESPONSIVE START ***** */
+@media only screen and (max-width: 652px) {
+  .site-header-wrapper {
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .site-header-start {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .site-header-wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  .site-header__burger{
+    display: block;
+  }
+  .site-nav{
+    display: none;
+  }
+  .site-header-btn {
+    display: none;
+  }
+  
+  .close-button{
+    display: block;
+  }
+  
+  .site-header-start {
+    margin-bottom: 0px;
+  }
+}
+/* ****** SITE HEADER RESPONSIVE END ***** */
 /* ********** SITE HEADER STYLE END ********* */
 
 /* ************* HERO SECTION STYLE START ********** */
