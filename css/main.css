@@ -25,10 +25,24 @@
   url('../fonts/public-sans-v14-latin-700.svg#PublicSans') format('svg'); /* Legacy iOS */
 }
 
+/* dm-serif-display-regular - latin */
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/dm-serif-display-v10-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+  url('../fonts/dm-serif-display-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/dm-serif-display-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/dm-serif-display-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/dm-serif-display-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/dm-serif-display-v10-latin-regular.svg#DMSerifDisplay') format('svg'); /* Legacy iOS */
+}
 :root {
-  /* --header-bg-color: #fff; */
-  /* --main-bg-color: #fff; */
-  /* main-text-color: #fff; */
+  --main-bg-color: #EDF3F8;
+  --main-text-color: #36536B;
+  --main-subtitle-color: #FBFCFE;
+  --btn-color: #BA4270;
 }
 
 /* GENERAL */
@@ -49,7 +63,8 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: 'DM Serif Display';
+  font-weight: 400;
   background-color: #fff;
 }
 
@@ -79,3 +94,162 @@ img {
   padding-right: 20px;
   padding-left: 20px;
 }
+
+ul,ol,li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* ********** SITE HEADER STYLE START ********* */
+.site-header-top {
+  background-image: url(../images/header-top-bg.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 450px) calc(50% - 50px);
+  background-color: var(--main-bg-color);
+}
+.site-header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.site-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header-start {
+  display: flex;
+  align-items: center;
+}
+
+.site-header-logo{
+  margin-right: 64px;
+}
+
+.site-nav-list {
+  display: flex;
+  align-items: center;
+}
+.site-nav-item:not(:first-child){
+  margin-left: 40px;
+}
+.site-nav-link {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--main-text-color);
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.site-nav-link:active{
+  color: var(--main-text-color);
+  opacity: 1;
+}
+.site-header-btn {
+  padding: 15px 25px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: var(--main-subtitle-color);
+  background-color: #BA4270;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+}
+
+.site-header-btn:active{
+  background-color: #DA6D97;
+}
+/* ********** SITE HEADER STYLE END ********* */
+
+/* ************* HERO SECTION STYLE START ********** */
+.hero-section {
+  padding-top: 112px;
+  padding-bottom: 151px;
+}
+
+.hero-section-title {
+  width: 100%;
+  max-width: 546px;
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.553846px;
+  color: var(--main-text-color);
+}
+.input-label {
+  display: flex;
+  width: 100%;
+  max-width: 445px;
+  margin-bottom: 16px;
+  background-color: var(--main-subtitle-color);
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+}
+
+.input-email{
+  padding-left: 27px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.input-email::placeholder{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--main-text-color);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.hero-section-btn {
+  margin-left: auto;
+  padding: 15px 25px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: var(--main-subtitle-color);
+  background-color: var(--btn-color);
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-section-btn:active{
+  background-color: #DA6D97;
+}
+.input-label-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 27px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6C8294;
+}
+
+.input-label-bold{
+  font-weight: 700;
+}
+/* ************* HERO SECTION STYLE END ********** */
