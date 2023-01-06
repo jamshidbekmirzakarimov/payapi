@@ -43,6 +43,7 @@
   --main-text-color: #36536B;
   --main-subtitle-color: #FBFCFE;
   --btn-color: #BA4270;
+  --section-bg-color: #1B262F;
 }
 
 /* GENERAL */
@@ -64,6 +65,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: 'DM Serif Display';
+  font-style: normal;
   font-weight: 400;
   background-color: #fff;
 }
@@ -442,7 +444,7 @@ a{
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
     border-radius: 24px;
   }
-
+  
   .hero-section-btn {
     margin-left: none;
     width: 100%;
@@ -463,4 +465,100 @@ a{
 
 /* ************* HERO SECTION STYLE END ********** */
 
-/* ************  ******** */
+/* ********* SITE MAIN START ******* */
+/* ************ WORK SECTION STYLE START ******** */
+.site-main {
+  background-color: var(--main-bg-color);
+}
+.work-section {
+  background-color: #1B262F;
+  background-image: url(../images/work-section-bg.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 550px) calc(50% - 200px);
+}
+
+.work-section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.work-section-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: var(--main-subtitle-color);
+}
+.work-section-subtitle {
+  width: 100%;
+  max-width: 445px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--main-subtitle-color);
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+.work-section-btn {
+  padding: 15px 32px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: var(--main-subtitle-color);
+  border: 1px solid var(--main-subtitle-color);
+  border-radius: 24px;
+}
+
+.work-section-btn:active{
+  background-color: #fff;
+  border: 1px solid var(--main-subtitle-color);
+  color: #1B262F;
+}
+
+.work-section-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 536px;
+}
+
+.work-section-item:first-child{
+  margin-right: 62px;
+  margin-bottom: 54px;
+}
+
+.work-section-item:nth-child(2){
+  margin-right: 60px;
+  margin-bottom: 54px;
+}
+
+.work-section-item:nth-child(3){
+  margin-bottom: 54px;
+}
+
+.work-section-item:nth-child(4){
+  margin-right: 85px;
+}
+
+.work-section-item:nth-child(5){
+  margin-right: 80px;
+}
+
+/* ************ WORK SECTION STYLE END ******** */
+/* ********* SITE MAIN END ******* */
