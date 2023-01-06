@@ -594,7 +594,7 @@ a{
   }
 }
 
-@media only screen and (max-width: 505px){
+@media only screen and (max-width: 580px){
   .work-section-list {
     width: 277px;
     display: flex;
