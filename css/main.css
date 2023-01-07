@@ -918,5 +918,22 @@ a{
   letter-spacing: -0.115385px;
   color: #6C8294;
 }
+
+/* ***** PRODUCT SECTION RESPONSIVE START **** */
+@media only screen and (max-width: 768px) {
+  .product-section-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-section-subtitle {
+    width: 100%;
+    max-width: 223px;
+  }
+  
+}
+/* ***** PRODUCT SECTION RESPONSIVE END **** */
 /* ******** PRODUCT SECTION STYLE END ******* */
 /* ********* SITE MAIN END ******* */
