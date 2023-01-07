@@ -835,7 +835,26 @@ a{
   }
 }
 
-
+@media only screen and (max-width: 375px) {
+  .simple-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: static;
+    overflow: hidden;
+  }
+  
+  .simple-section-title {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.276923px;
+  }
+  .simple-section-subtitle {
+    width: 100%;
+    max-width: 328px;
+    text-align: center;
+  }
+}
 /* ******* SIMPLE SECTION RESPONSIVE END ****** */
 /* ********** SIMPLE SECTION STYLE END ********* */
 /* ********* SITE MAIN END ******* */
