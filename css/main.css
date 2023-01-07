@@ -739,18 +739,18 @@ a{
     padding-top: 80px;
     padding-bottom: 80px;
   }
-
+  
   .easy-section-title{
     font-size: 36px;
     line-height: 36px;
     letter-spacing: -0.276923px;
   }
-
+  
   .easy-section-img {
     width: 328px;
     height: 209px;
   }
-
+  
   .easy-section-subtitle {
     max-width: 573px;
     text-align: center;
@@ -762,4 +762,47 @@ a{
 }
 /* ********* EASY SECTION RESPONSIVE END ****** */
 /* ********** EASY SECTION STYLE END ******** */
+
+/* ********** SIMPLE SECTION STYLE START ********* */
+.simple-section {
+  padding-top: 332px;
+  padding-bottom: 338px;
+  position: relative;
+  overflow: hidden;
+}
+
+.simple-section-wrapper {
+  display: flex;
+  align-items: center;
+}
+.simple-section-text {
+}
+.simple-section-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: var(--main-text-color);
+}
+.simple-section-subtitle {
+  width: 100%;
+  max-width: 445px;
+  margin: 0;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
+}
+.simple-section-img {
+  position: absolute;
+  top: calc(50% - 400px);
+  right: calc(50% - 1100px);
+}
+/* ********** SIMPLE SECTION STYLE END ********* */
 /* ********* SITE MAIN END ******* */
