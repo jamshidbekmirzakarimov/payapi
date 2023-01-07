@@ -867,8 +867,6 @@ a{
   align-items: center;
   justify-content: space-between;
 }
-.product-section-item {
-}
 
 .product-section-item::before{
   margin: auto;
@@ -927,12 +925,26 @@ a{
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  
   .product-section-subtitle {
     width: 100%;
     max-width: 223px;
+  } 
+}
+
+@media only screen and (max-width: 375px){
+  .product-section {
+    padding-bottom: 80px;
   }
-  
+
+  .product-section-item:not(:last-child){
+    margin-bottom: 48px;
+  }  
+
+  .product-section-subtitle {
+    width: 100%;
+    max-width: 328px;
+  } 
 }
 /* ***** PRODUCT SECTION RESPONSIVE END **** */
 /* ******** PRODUCT SECTION STYLE END ******* */
