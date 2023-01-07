@@ -719,7 +719,6 @@ a{
 @media only screen and (max-width: 768px) {
   .easy-section {
     padding-top: 100px;
-    padding-bottom: 100px;
   }
   .easy-section-title{
     text-align: center;
@@ -737,7 +736,6 @@ a{
 @media only screen and (max-width: 375px) {
   .easy-section {
     padding-top: 80px;
-    padding-bottom: 80px;
   }
   
   .easy-section-title{
@@ -804,5 +802,40 @@ a{
   top: calc(50% - 400px);
   right: calc(50% - 1100px);
 }
+
+/* ******* SIMPLE SECTION RESPONSIVE START ****** */
+@media only screen and (max-width: 768px) {
+  .simple-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: static;
+    overflow: hidden;
+  }
+  
+  .simple-section-wrapper {
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .simple-section-text{
+    order: 1;
+  }
+  
+  .simple-section-title {
+    text-align: center;
+  }
+  .simple-section-subtitle {
+    width: 100%;
+    max-width: 573px;
+    text-align: center;
+  }
+  
+  .simple-section-img {
+    position: static;
+  }
+}
+
+
+/* ******* SIMPLE SECTION RESPONSIVE END ****** */
 /* ********** SIMPLE SECTION STYLE END ********* */
 /* ********* SITE MAIN END ******* */
