@@ -969,6 +969,47 @@ a{
   color: var(--main-text-color);
 }
 
+/* ****** READY SECTION RESPONSIVE START ***** */
+@media only screen and (max-width: 768px) {
+  .ready-section-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .ready-section-title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .ready-section {
+    padding-bottom: 80px;
+  }
+  .input-label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 16px;
+    box-shadow: 0px 0px 0px 0px rgba(54, 83, 107, 0.25);
+  }
+  
+  
+  .input-email{
+    display: flex;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 16px;
+    background-color: var(--main-subtitle-color);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+  }
+  
+}
+/* ****** READY SECTION RESPONSIVE END ***** */
 /* ******** READY SECTION END ******* */
 /* ********* SITE MAIN END ******* */
 
