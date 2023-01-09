@@ -9,8 +9,132 @@
 .site-header-top-pricing{
   background-image: url(../images/pricing-bg.svg);
   background-repeat: no-repeat;
+  background-position: calc(50% + 500px) calc(50% - 550px);
+  background-color: #EDF3F8;
 }
 
 /* ******** PRICING HERO SECTION START ******* */
+.pricing-hero-section {
+  padding-top: 42px;
+  padding-bottom: 96px;
+}
+.container {
+}
+.pricing-hero-section-title {
+  margin-top: 0;
+  margin-bottom: 72px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.430769px;
+  color: var(--main-text-color);
+}
+.pricing-hero-section-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pricing-hero-section-item {
+  
+}
+.pricing-hero-section-item-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.246154px;
+  color: var(--btn-color);
+}
+.pricing-hero-section-item-subtitle {
+  width: 100%;
+  max-width: 350px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
+}
+.pricing-hero-section-doller {
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.430769px;
+  color: var(--main-text-color);
+  border-bottom: 1px solid #D6DFE6;
+}
 
+.input-form{
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #D6DFE6;
+}
+
+.radio-label{
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.radio-label:last-child{
+  margin-bottom: 0;
+}
+
+.radio-input{
+  display: none;
+}
+
+.radio-custom{
+  width: 12px;
+  height: 8px;
+  margin-right: 24px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-color: transparent;
+}
+
+.radio-input:checked + .radio-custom{
+  background-image: url("../images/checked.svg");
+}
+
+.radio-input:checked + .radio-custom + .radio-text{
+  color: var(--main-text-color);
+}
+
+.radio-text{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #A9B7C3;
+  cursor: pointer;
+}
+
+
+.pricing-hero-section-btn {
+  padding: 15px 28px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: var(--main-text-color);
+  border: 1px solid #36536B;
+  border-radius: 24px;
+}
 /* ******** PRICING HERO SECTION END ******* */
