@@ -18,8 +18,8 @@
   padding-top: 42px;
   padding-bottom: 96px;
 }
-.container {
-}
+
+
 .pricing-hero-section-title {
   margin-top: 0;
   margin-bottom: 72px;
@@ -36,9 +36,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.pricing-hero-section-item {
-  
-}
+
 .pricing-hero-section-item-title {
   margin-top: 0;
   margin-bottom: 16px;
@@ -137,4 +135,65 @@
   border: 1px solid #36536B;
   border-radius: 24px;
 }
+
+/* ****** PRICING HERO SECTION RESPONSIVE START ****** */
+@media only screen and (max-width: 768px) {
+  .pricing-hero-section-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .pricing-hero-section-title {
+    text-align: center;
+  }
+  .pricing-hero-section-item-title {
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.184615px;
+  }
+  .pricing-hero-section-item-subtitle {
+    width: 100%;
+    max-width: 223px;
+    margin-top: 0;
+    margin-bottom: 19px;
+    margin: auto;
+    text-align: center;
+  }
+  .pricing-hero-section-doller {
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding-bottom: 21px;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -0.369231px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .pricing-hero-section-item {
+    width: 100%;
+  }
+  .pricing-hero-section-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .pricing-hero-section-item-subtitle {
+    display: none;
+    width: 100%;
+    max-width: 223px;
+    margin-top: 0;
+    margin-bottom: 19px;
+    margin: auto;
+    text-align: center;
+  }
+}
+/* ****** PRICING HERO SECTION RESPONSIVE END ****** */
 /* ******** PRICING HERO SECTION END ******* */
