@@ -1,0 +1,16 @@
+:root {
+  --main-bg-color: #EDF3F8;
+  --main-text-color: #36536B;
+  --main-subtitle-color: #FBFCFE;
+  --btn-color: #BA4270;
+  --section-bg-color: #1B262F;
+}
+
+.site-header-top-pricing{
+  background-image: url(../images/pricing-bg.svg);
+  background-repeat: no-repeat;
+}
+
+/* ******** PRICING HERO SECTION START ******* */
+
+/* ******** PRICING HERO SECTION END ******* */
