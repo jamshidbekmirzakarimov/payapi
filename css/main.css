@@ -936,11 +936,11 @@ a{
   .product-section {
     padding-bottom: 80px;
   }
-
+  
   .product-section-item:not(:last-child){
     margin-bottom: 48px;
   }  
-
+  
   .product-section-subtitle {
     width: 100%;
     max-width: 328px;
@@ -948,4 +948,30 @@ a{
 }
 /* ***** PRODUCT SECTION RESPONSIVE END **** */
 /* ******** PRODUCT SECTION STYLE END ******* */
+/* ******** READY SECTION START ******* */
+.ready-section {
+  padding-bottom: 96px;
+}
+
+.ready-section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ready-section-title {
+  margin: 0;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: var(--main-text-color);
+}
+
+/* ******** READY SECTION END ******* */
 /* ********* SITE MAIN END ******* */
+
+/* ******* SITE FOOTER START ****** */
+
+/* ******* SITE FOOTER END ****** */
