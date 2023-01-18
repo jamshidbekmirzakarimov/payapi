@@ -5,3 +5,25 @@
   --btn-color: #BA4270;
   --section-bg-color: #1B262F;
 }
+
+.site-header-about-top{
+  background-image: url(../images/pricing-bg.svg);
+  background-repeat: no-repeat;
+}
+
+/* ******** ABOUT HERO SECTION STYLE START ****** */
+.about-hero-section {
+}
+.container {
+}
+.about-hero-section-title {
+}
+.about-hero-section-list {
+}
+.about-hero-section-item {
+}
+.about-hero-section-item-title {
+}
+.about-hero-section-item-subtitle {
+}
+/* ******** ABOUT HERO SECTION STYLE END ****** */
